@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGray">
+
+    <TextView
+        android:id="@+id/balancesHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Who owes whom?"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/balancesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="680dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp" />
+
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No one is owed money"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:layout_marginTop="250dp"/>
+</RelativeLayout>

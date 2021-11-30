@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.splitisfun">
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Split is Fun"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter android:label="filter_view_example">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- Accepts URIs that begin with "https://www.splititeasy.com” -->
+                <data android:scheme="https"
+                    android:host="www.splititeasy.com" />
+                <!-- note that the leading "/" is required for pathPrefix-->
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddEditMemberActivity"/>
+        <activity android:name=".AddEditBillActivity"/>
+        <activity android:name=".HandleOnGroupClickActivity" />
+        <activity android:name=".GroupListActivity" />
+        <activity android:name=".CreateNewGroupActivity" />
+    </application>
+
+</manifest>

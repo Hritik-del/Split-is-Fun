@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Split is Fun</string>
+
+    <string-array name="currencySymbols">
+        <item>INR-(₹)</item>
+        <item>USD-($)</item>
+        <item>EUR-(€)</item>
+        <item>YEN-(¥)</item>
+    </string-array>
+
+    <string name="copyright">Copyright © 2021 Hritik Agrahari</string>
+    <string name="developer">Designed &amp; Developed By Hritik Agrahari</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
